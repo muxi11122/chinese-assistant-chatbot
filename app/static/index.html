@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>中文学习助手</title>
+    <link rel="stylesheet" href="/static/style.css" />
+  </head>
+  <body>
+    <main class="chat-shell">
+      <section id="messages" class="messages" aria-live="polite">
+        <div class="bubble assistant">你好！你可以先发一句中文，我会结合教材和水平边界来回答。</div>
+      </section>
+      <form id="chat-form" class="composer">
+        <textarea
+          id="message-input"
+          rows="3"
+          placeholder="输入你的中文问题..."
+          required
+        ></textarea>
+        <button id="send-button" type="submit">发送</button>
+      </form>
+    </main>
+    <script src="/static/app.js?v=render-2"></script>
+  </body>
+</html>

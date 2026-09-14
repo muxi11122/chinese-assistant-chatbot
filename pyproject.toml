@@ -1,0 +1,16 @@
+[project]
+name = "chinese-assistant-chatbot"
+version = "0.1.0"
+description = "Local MVP Chinese learning assistant chatbot"
+requires-python = ">=3.11"
+dependencies = [
+    "fastapi>=0.115.0",
+    "google-genai>=0.6.0",
+    "uvicorn[standard]>=0.30.0",
+]
+
+[tool.uv]
+package = false
+
+[tool.setuptools.packages.find]
+include = ["app*"]
